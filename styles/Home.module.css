@@ -202,16 +202,28 @@
   border-style: solid;
   border-radius: 45px;
   border-color: var(--primary);
-  border-width: 10px;
+  border-width: 0.5rem;
 }
 
 .button:hover {
   transform: scale(1.1);
 }
 
-.horizontalRight {
+.horizontal {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+}
+
+.logoPlacement {
+  position: absolute;
+  align-self: left;
+}
+
+.textPlacement {
+  margin-left: auto;
+  margin-right: 0;
+  right: 0.5rem;
+  align-self: right;
 }
 
 @media (max-width: 64rem) {
@@ -226,7 +238,7 @@
     border-style: solid;
     border-radius: 45px;
     border-color: var(--primary);
-    border-width: 10px;
+    border-width: 0.5rem;
   }
 }
 
@@ -242,6 +254,6 @@
     border-style: solid;
     border-radius: 45px;
     border-color: var(--primary);
-    border-width: 10px;
+    border-width: 0.5rem;
   }
 }

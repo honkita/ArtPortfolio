@@ -50,6 +50,19 @@
   border-color: "red";
 }
 
+.button {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 2rem;
+}
+
+.logoImage {
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
 .imageRendering {
   padding: 0;
   border: None;

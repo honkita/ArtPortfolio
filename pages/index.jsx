@@ -22,18 +22,15 @@ export default function Home() {
         <section className={style.container}>
           <FaceImage />
           <section className={utilStyles.heading2Xl}>Elite Lu</section>
-          <section className={utilStyles.headingMD}>
-            WIP NOT DONE YET UwU
-          </section>
           <Button
             name="Art Instagram"
             url="https://www.instagram.com/elite.lu/"
-            image="../public/images/ButtonIcons/paintbrush.svg"
+            image="Paintbrush"
           />
           <Button
             name="Embroidery Instagram"
             url="https://www.instagram.com/h.ta_stitches/"
-            image="../public/images/ButtonIcons/needle.svg"
+            image="Needle"
           />
         </section>
       </div>
