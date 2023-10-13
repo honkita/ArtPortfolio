@@ -9,7 +9,7 @@
   --secondary: #ffed7f;
   --secondary-bright: #ffea5f;
   --background: #050505;
-
+  transition: all 0.2s;
   /* Asks browser to behave in dark mode */
   color-scheme: dark;
 }
@@ -25,4 +25,5 @@
   --secondary: #002aff;
   --secondary-bright: #4800ff;
   --background: #f5f5f5;
+  transition: all 0.2s;
 }
