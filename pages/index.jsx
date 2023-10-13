@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import { useTheme, ThemeProvider } from "next-themes";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Layout from "./Layout";
 import utilStyles from "../styles/theme.util.module.css";
 import style from "../styles/Home.module.css";
