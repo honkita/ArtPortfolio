@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "tilt-neon";
+  color: var(--primary-dark);
 }
 * {
   box-sizing: border-box;
