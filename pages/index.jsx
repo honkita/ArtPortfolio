@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import utilStyles from "../styles/theme.util.module.css";
 import style from "../styles/Home.module.css";
 import FaceImage from "../components/FaceImage";
+import Button from "../components/Button";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -24,6 +25,16 @@ export default function Home() {
           <section className={utilStyles.headingMD}>
             Still working on this come back soon for my art stuff!!!!!
           </section>
+          <Button
+            name="Art Instagram"
+            url="https://www.instagram.com/elite.lu/"
+            image="../public/images/ButtonIcons/paintbrush.svg"
+          />
+          <Button
+            name="Embroidery Instagram"
+            url="https://www.instagram.com/h.ta_stitches/"
+            image="../public/images/ButtonIcons/needle.svg"
+          />
         </section>
       </div>
     </Layout>

@@ -16,6 +16,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "tilt-neon";
 }
 footer {
   width: 100%;
@@ -24,6 +25,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "tilt-neon";
 }
 footer img {
   margin-left: 0.5rem;

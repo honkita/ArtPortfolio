@@ -28,47 +28,8 @@
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: var(--primary-dark);
-}
-
-.toggle {
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor; /* IE8+           */
-  width: 6rem;
-  height: 4rem;
-  min-width: 3rem;
-  min-height: 2rem;
-  padding: 0;
-  border: None;
-  background-image: url(../public/images/Switch/SwitchBack.png);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.2s;
-  position: relative;
-  right: 0%;
-  top: 1rem;
-}
-
-.toggle::after {
-  background-image: url("../public/images/Switch/Switch.png");
-  background-size: 4rem 4rem;
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  content: "";
-  transition: all 0.2s;
-  transform: translateX(-1rem);
-}
-
-.toggledark {
-  background-image: url("../public/images/Switch/SwitchBackDark.png");
-  transition: all 0.2s;
-}
-
-.toggledark::after {
-  background-image: url("../public/images/Switch/SwitchDark.png");
-  transform: translateX(1rem);
+  color: var(--primary);
+  font-family: "tilt-neon";
 }
 
 .mainFace {
