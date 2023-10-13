@@ -229,3 +229,19 @@
     border-width: 10px;
   }
 }
+
+@media (max-width: 36rem) {
+  .button {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 5rem;
+    min-width: 20rem;
+    min-height: 5rem;
+    transition: all 0.2s ease;
+    background: transparent;
+    border-style: solid;
+    border-radius: 45px;
+    border-color: var(--primary);
+    border-width: 10px;
+  }
+}
