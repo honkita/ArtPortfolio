@@ -8,7 +8,7 @@ import style from "../styles/Home.module.css";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
-  const name = "Elite Lu Portfolio";
+  const name = "Elite Lu Art Portfolio";
 
   return (
     <Layout home>
