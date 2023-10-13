@@ -217,7 +217,7 @@
 @media (max-width: 64rem) {
   .button {
     margin-top: 2rem;
-    width: 75vw;
+    width: 50vw;
     height: 5rem;
     max-width: 25rem;
     min-height: 5rem;
