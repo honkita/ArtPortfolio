@@ -23,7 +23,7 @@ export default function Home() {
           <FaceImage />
           <section className={utilStyles.heading2Xl}>Elite Lu</section>
           <section className={utilStyles.headingMD}>
-            Still working on this come back soon for my art stuff!!!!!
+            WIP NOT DONE YET UwU
           </section>
           <Button
             name="Art Instagram"
