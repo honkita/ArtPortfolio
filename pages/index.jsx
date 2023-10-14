@@ -32,6 +32,11 @@ export default function Home() {
             url="https://www.instagram.com/h.ta_stitches/"
             image="Needle"
           />
+          <Button
+            name="Twitter"
+            url="https://twitter.com/honkita_"
+            image="Twitter"
+          />
         </section>
       </div>
     </Layout>
