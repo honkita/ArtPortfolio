@@ -4,18 +4,34 @@ import Image from "next/image";
 import { useTheme, ThemeProvider } from "next-themes";
 import style from "../styles/Home.module.css";
 import Link from "next/link";
-import needleIcon from "../public/images/ButtonIcons/needle.svg";
-import paintbrushIcon from "../public/images/ButtonIcons/paintBrush.svg";
 
 export default function Button(props) {
   function iconPicker() {
     switch (props.image) {
       case "Paintbrush":
-        return <Image src={paintbrushIcon} className={utilStyles.button} />;
+        return (
+          <img
+            src={"./images/ButtonIcons/paintbrush.png"}
+            className={`${utilStyles.button} `}
+            alt="IDK"
+          />
+        );
       case "Needle":
-        return <Image src={needleIcon} className={utilStyles.button} />;
+        return (
+          <img
+            src={"./images/ButtonIcons/needle.png"}
+            className={`${utilStyles.button} `}
+            alt="IDK"
+          />
+        );
       default:
-        return <Image src={needleIcon} className={utilStyles.button} />;
+        return (
+          <img
+            src={"./images/ButtonIcons/needle.png"}
+            className={`${utilStyles.button} `}
+            alt="IDK"
+          />
+        );
     }
   }
 

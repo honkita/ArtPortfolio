@@ -53,7 +53,16 @@
 .button {
   width: 2rem;
   height: 2rem;
-  stroke-width: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.needleIcon {
+  background-image: url("../public/images/ButtonIcons/needle.png");
+}
+
+.paintbrushIcon {
+  background-image: url("../public/images/ButtonIcons/paintbrush.png");
 }
 
 .logoImage {
