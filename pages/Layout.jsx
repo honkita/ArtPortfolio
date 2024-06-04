@@ -8,9 +8,7 @@ export default function Layout({ home, children }) {
     <div className={styles.background}>
       <main>{children}</main>
       <section className={styles.container}>
-        <section className={styles.headingMd}>
-          Copyrights © 2023 Elite Lu
-        </section>
+        <div className={styles.headingMd}>Copyrights © 2023 Elite Lu</div>
       </section>
     </div>
   );
