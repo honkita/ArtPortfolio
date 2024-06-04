@@ -27,7 +27,6 @@
 .headingMd {
   text-align: center;
   font-size: 1.2rem;
-  line-height: 1.5;
   color: var(--primary);
   font-family: "tilt-neon";
 }
@@ -58,12 +57,7 @@
 }
 
 .logoImage {
-  width: 2rem;
-  height: 2rem;
-  min-width: 2rem;
-  min-height: 2rem;
   font-size: 2rem;
-  color: var(--primary);
 }
 
 .imageRendering {
