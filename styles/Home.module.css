@@ -20,6 +20,18 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .title a {
@@ -71,7 +83,9 @@
   text-decoration: none;
   border: 1px solid var(--primary-dark);
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .card:hover,

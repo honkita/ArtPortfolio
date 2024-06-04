@@ -1,5 +1,5 @@
 {
-  "Paintbrush": "far fa-paint-brush",
-  "Instagram": "fab fa-instagram",
-  "Twitch": "fab fa-twitch"
+  "Paintbrush": { "prefix": "fas", "iconName": "paintbrush" },
+  "Instagram": { "prefix": "fab", "iconName": "instagram" },
+  "Twitch": { "prefix": "fab", "iconName": "twitch" }
 }
