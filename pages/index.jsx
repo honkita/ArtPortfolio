@@ -6,10 +6,12 @@ import utilStyles from "../styles/theme.util.module.css";
 import style from "../styles/Home.module.css";
 import FaceImage from "../components/FaceImage";
 import Button from "../components/Button";
+import buttons from "../public/Buttons.json";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
   const name = "Elite Lu Art Portfolio";
+  var buttonsJSON = JSON.parse(JSON.stringify(buttons));
 
   return (
     <Layout home>
@@ -22,21 +24,10 @@ export default function Home() {
         <section className={style.container}>
           <FaceImage />
           <section className={utilStyles.heading2Xl}>Elite Lu</section>
-          <Button
-            name="Art Instagram"
-            url="https://www.instagram.com/elite.lu/"
-            image="Paintbrush"
-          />
-          <Button
-            name="Embroidery Instagram"
-            url="https://www.instagram.com/h.ta_stitches/"
-            image="Needle"
-          />
-          <Button
-            name="Twitter"
-            url="https://twitter.com/honkita_"
-            image="Twitter"
-          />
+
+          {buttonsJSON.map((button) => (
+            <Button name={button.name} url={button.url} image={button.image} />
+          ))}
         </section>
       </div>
     </Layout>

@@ -1,35 +1,33 @@
 import React, { useEffect, useState } from "react";
 import utilStyles from "../styles/theme.util.module.css";
-import Image from "next/image";
-import { useTheme, ThemeProvider } from "next-themes";
 import style from "../styles/Home.module.css";
 import Link from "next/link";
+import Head from "next/head";
+import IconsLinks from "../public/IconsLinks.json";
 
 export default function Button(props) {
+  var IconsLinksJSON = JSON.parse(JSON.stringify(IconsLinks));
   function iconPicker() {
-    switch (props.image) {
-      case "Paintbrush":
-        return "./images/ButtonIcons/paintbrush.png";
-      case "Needle":
-        return "./images/ButtonIcons/needle.png";
-      case "Twitter":
-        return "./images/ButtonIcons/twitter.png";
-      default:
-        return "";
-    }
+    if (IconsLinksJSON[props.image] != null) return IconsLinksJSON[props.image];
+    return null;
   }
 
   return (
     <Link href={props.url} target={"_blank"}>
+      <Head>
+        <script
+          // you might need to get a newer version
+          src="https://kit.fontawesome.com/fbadad80a0.js"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <button id={props.name} className={style.button}>
         <section className={style.horizontal}>
           <div className={style.logoPlacement}>
             {
-              <img
-                src={iconPicker()}
-                className={`${utilStyles.button} `}
-                alt={props.name}
-              />
+              <span className={`${utilStyles.logoImage} `} priority>
+                <i class={iconPicker()} alt={props.name}></i>
+              </span>
             }
           </div>
           <div className={style.textPlacement}>
