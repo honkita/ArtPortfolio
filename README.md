@@ -18,9 +18,11 @@ Currently, this project is being used to host my own links, which include my two
 
 The only files that basic user modification is needed are the following:
 
-- "IconsLinks.json", a file to icons that are used from the FontAwesome Library (free version)
+- "Buttons.json": A file that contains all the buttons that the user wants on their LinkHub
 
-- "Buttons.json", a file that contains all the buttons that the user wants on their LinkHub
+- "IconsLinks.json": A file to icons that are used from the FontAwesome Library (free version)
+
+- "userInfo.json": A file to the user's information.
 
 ## FAQ
 

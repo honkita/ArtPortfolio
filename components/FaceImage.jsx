@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import utilStyles from "../styles/theme.util.module.css";
 import { useTheme, ThemeProvider } from "next-themes";
-import userInfo from "../public/userInfo.json";
+import userInfo from "../public/userJSONs/userInfo.json";
 
 export default function FaceImage() {
   var userInfoJSON = JSON.parse(JSON.stringify(userInfo));

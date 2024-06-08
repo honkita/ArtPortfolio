@@ -2,7 +2,7 @@ import React from "react";
 import utilStyles from "../styles/theme.util.module.css";
 import style from "../styles/Home.module.css";
 import Link from "next/link";
-import IconsLinks from "../public/IconsLinks.json";
+import IconsLinks from "../public/userJSONS/IconsLinks.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Button(props) {

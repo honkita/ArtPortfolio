@@ -6,8 +6,8 @@ import utilStyles from "../styles/theme.util.module.css";
 import style from "../styles/Home.module.css";
 import FaceImage from "../components/FaceImage";
 import Button from "../components/Button";
-import buttons from "../public/Buttons.json";
-import userInfo from "../public/userInfo.json";
+import buttons from "../public/userJSONs/Buttons.json";
+import userInfo from "../public/userJSONs/userInfo.json";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
