@@ -1,5 +1,6 @@
 {
   "Paintbrush": { "prefix": "fas", "iconName": "paintbrush" },
   "Instagram": { "prefix": "fab", "iconName": "instagram" },
-  "Twitch": { "prefix": "fab", "iconName": "twitch" }
+  "Twitch": { "prefix": "fab", "iconName": "twitch" },
+  "Embroidery": { "prefix": "local", "iconName": "Embroidery.svg" }
 }

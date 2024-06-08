@@ -57,7 +57,25 @@
 }
 
 .logoImage {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  fill: var(--primary) !important;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--primary);
+}
+
+.icon {
+  background-color: var(--primary);
 }
 
 .imageRendering {

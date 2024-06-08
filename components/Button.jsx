@@ -14,21 +14,45 @@ export default function Button(props) {
   var IconsLinksJSON = JSON.parse(JSON.stringify(IconsLinks));
 
   function iconPicker() {
-    return findIconDefinition({
-      prefix: String(IconsLinksJSON[props.image]["prefix"]),
-      iconName: String(IconsLinksJSON[props.image]["iconName"]),
-    });
+    if (String(IconsLinksJSON[props.image]["prefix"]) != "local") {
+      return (
+        <span className={`${utilStyles.headingMd} `}>
+          <FontAwesomeIcon
+            icon={findIconDefinition({
+              prefix: String(IconsLinksJSON[props.image]["prefix"]),
+              iconName: String(IconsLinksJSON[props.image]["iconName"]),
+            })}
+            size="xl"
+          />
+        </span>
+      );
+    } else {
+      return (
+        <span className={`${utilStyles.headingMd} `}>
+          {/* <div
+            className="icon"
+            
+          /> */}
+          <div
+            src={
+              "./CustomIcons/" + String(IconsLinksJSON[props.image]["iconName"])
+            }
+            className={utilStyles.logoImage}
+            style={{
+              maskImage: `url(${"./CustomIcons/" + IconsLinksJSON[props.image]["iconName"]})`,
+              WebkitMaskImage: `url(${"./CustomIcons/" + IconsLinksJSON[props.image]["iconName"]})`,
+            }}
+          />
+        </span>
+      );
+    }
   }
 
   return (
     <Link href={props.url} target={"_blank"}>
       <button id={props.name} className={style.button}>
         <section className={style.horizontal}>
-          <div className={style.logoPlacement}>
-            <span className={`${utilStyles.headingMd} `} priority>
-              <FontAwesomeIcon icon={iconPicker()} size="xl" />
-            </span>
-          </div>
+          <div className={style.logoPlacement}>{iconPicker()}</div>
           <div className={style.textPlacement}>
             <div className={utilStyles.headingMd}>{props.name}</div>
           </div>

@@ -24,6 +24,8 @@ The only files that basic user modification is needed are the following:
 
 - "userInfo.json": A file to the user's information.
 
+- "CustomIcons": A folder to put all custom SVG icons that are not present in the FontAwesome Library
+
 ## FAQ
 
 ### Why use this over LinkTree?
