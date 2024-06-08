@@ -7,23 +7,26 @@ import style from "../styles/Home.module.css";
 import FaceImage from "../components/FaceImage";
 import Button from "../components/Button";
 import buttons from "../public/Buttons.json";
+import userInfo from "../public/userInfo.json";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
-  const name = "Elite Lu Art Portfolio";
   var buttonsJSON = JSON.parse(JSON.stringify(buttons));
+  var userInfoJSON = JSON.parse(JSON.stringify(userInfo));
 
   return (
     <Layout home>
       <div>
         <Head>
-          <title>{name}</title>
-          <meta name="description" content="Elite Lu's Art Portfolio Site" />
-          <meta name="og:title" content={name} />
+          <title>{userInfoJSON["website"]}</title>
+          <meta name="description" content={userInfoJSON["website"]} />
+          <meta name="og:title" content={userInfoJSON["website"]} />
         </Head>
         <section className={style.container}>
           <FaceImage />
-          <section className={utilStyles.heading2Xl}>Elite Lu</section>
+          <section className={utilStyles.heading2Xl}>
+            {userInfoJSON["name"]}
+          </section>
 
           {buttonsJSON.map((button) => (
             <Button name={button.name} url={button.url} image={button.image} />

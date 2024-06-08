@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import utilStyles from "../styles/theme.util.module.css";
 import { useTheme, ThemeProvider } from "next-themes";
-import style from "../styles/Home.module.css";
+import userInfo from "../public/userInfo.json";
 
 export default function FaceImage() {
+  var userInfoJSON = JSON.parse(JSON.stringify(userInfo));
   return (
     <ThemeProvider>
       <img
-        src={"./images/Face/Hector_Pixel.png"}
+        src={userInfoJSON["mainFaceLink"]}
         className={`${utilStyles.mainFace} ${utilStyles.imageRendering} ${utilStyles.mainFaceBorder}`}
-        alt={"Hector Image"}
+        alt={userInfoJSON["mainFace"]}
       ></img>
     </ThemeProvider>
   );
