@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import React from "react";
-import userInfo from "../public/userJSONs/userInfo.json";
+import userInfo from "../public/user/userInfo.json";
 
 export default function Layout({ home, children }) {
   var userInfoJSON = JSON.parse(JSON.stringify(userInfo));
