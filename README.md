@@ -2,6 +2,8 @@
 
 # LinkHub
 
+![](https://raw.githubusercontent.com/honkita/MD-Links/main/Pixel_WIP.svg)
+
 ![Main Photo](./readmeimages/main.png)
 
 ## About
@@ -28,8 +30,22 @@ The only files that basic user modification is needed are the following:
 | CustomIcons     | ./public/CustomIcons          | A folder to put all custom SVG icons that are not present in the FontAwesome Library.                             |
 | variables.css   | ./styles/variables.css        | The css file for all the colours and font used in the document.                                                   |
 | favicon.ico     | ./public/favicon.ico          | The icon of the website                                                                                           |
+| pfp.png         | ./public/user/pfp.png         | The profile picture of the user on the FeedHub                                                                    |
 
 ### userInfo.json
+
+![userInfo.json file](./readmeimages/userInfoJSON.png)
+
+userInfo.json, as the name implies, is a file with all the main website information such as the person's name, the name of the website, and the main image for the website. The table below describes all the attributes:
+
+| Variable       | Purpose                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| "name"         | The name of the user for the website to display.                                                                                          |
+| "website"      | The name of the website when searched online.                                                                                             |
+| "mainFace"     | The descriptor name of the main face image for the site. Can be ignored since only used for the alt of the image.                         |
+| "mainFaceLink" | The location of the image. Can also be ignored if the user makes their face image pfp.png. Can be a .jpg too, but must be reflected here. |
+
+No additional variables need to be added to this file. Only edit the values.
 
 ### variables.css
 
