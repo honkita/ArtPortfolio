@@ -8,9 +8,7 @@ export default function Layout({ home, children }) {
     <div className={styles.background}>
       <main>{children}</main>
       <section className={styles.container}>
-        <div className={styles.headingMd}>
-          Copyrights © {new Date().getFullYear()} {userInfoJSON["name"]}
-        </div>
+        Copyrights © {new Date().getFullYear()} {userInfoJSON["name"]}
       </section>
     </div>
   );

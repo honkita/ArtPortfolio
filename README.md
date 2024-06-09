@@ -8,23 +8,31 @@
 
 This is a project is a pocket sized version of LinkTree. It allows for users to easily create their own link consolidation hub for social media such as Instagram, X (Formerly Twitter), and Facebook to list a few.
 
+This application assumes that all the buttons and the button icons have the same colour.
+
 ## How to Use
 
 Currently, this project is being used to host my own links, which include my two art Instagram accounts and my Twitch account. However, this project can be easily modified to fit your uses.
 
 ### Folder Layout
 
-![alt text](./readmeimages/image-1.png)
+![Folder Layout Photo](./readmeimages/image-1.png)
 
 The only files that basic user modification is needed are the following:
 
-- "Buttons.json": A file that contains all the buttons that the user wants on their LinkHub
+- "Buttons.json": A file that contains all the buttons that the user wants on their LinkHub.
 
-- "IconsLinks.json": A file to icons that are used from the FontAwesome Library (free version)
+- "IconsLinks.json": A file that connects logo names to either the link to the FontAwesome logo or the icon in the CustomIcons folder.
 
 - "userInfo.json": A file to the user's information.
 
-- "CustomIcons": A folder to put all custom SVG icons that are not present in the FontAwesome Library
+- "CustomIcons": A folder to put all custom SVG icons that are not present in the FontAwesome Library.
+
+- "variables.css": The css file for all the colours and font used in the document.
+
+### General Setup
+
+### variables.css
 
 ## FAQ
 

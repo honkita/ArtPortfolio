@@ -5,7 +5,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
-  color: var(--primary-dark);
+  color: var(--title-text);
 }
 
 .headingXl {
@@ -27,8 +27,16 @@
 .headingMd {
   text-align: center;
   font-size: 1.2rem;
-  color: var(--primary);
-  font-family: "tilt-neon";
+  color: var(--main-text);
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--copyright-text);
+  font-family: var(--font-family);
 }
 
 .mainFace {
@@ -62,7 +70,6 @@
   height: 2.5rem;
   min-width: 2.5rem;
   min-height: 2.5rem;
-  fill: var(--primary) !important;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -71,11 +78,11 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: center;
-  background-color: var(--primary);
+  background-color: var(--main-text) !important;
 }
 
 .icon {
-  background-color: var(--primary);
+  background-color: var(--main-text);
 }
 
 .imageRendering {

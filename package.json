@@ -21,6 +21,7 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
-    "javascript-obfuscator": "^4.1.0"
+    "javascript-obfuscator": "^4.1.0",
+    "sass": "^1.77.4"
   }
 }

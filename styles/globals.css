@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "tilt-neon";
-  color: var(--primary-dark);
+  font-family: var(--font-family);
 }
 * {
   box-sizing: border-box;
@@ -16,7 +15,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "tilt-neon";
 }
 footer {
   width: 100%;
@@ -25,7 +23,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "tilt-neon";
 }
 footer img {
   margin-left: 0.5rem;
@@ -38,18 +35,11 @@ footer a {
   color: inherit;
 }
 code {
-  color: var(--primary);
+  color: var(--background);
   background: var(--primary-dark);
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: "tilt-neon";
-}
-
-@font-face {
-  font-family: "tilt-neon";
-  src: local("tilt_neon"),
-    url("../public/tilt_neon/static/TiltNeon-Regular.ttf") format("truetype");
 }
 
 a:link {

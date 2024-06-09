@@ -1,8 +1,15 @@
 :root {
-  --primary-bright: #f7f3e3;
-  --primary: #af9164;
-  --primary-dim: #b3b6b7;
-  --primary-dark: #2b2118;
-  --secondary: #6f1a07;
+  --background: #f7f3e3;
+  --main-text: #af9164;
+  --title-text: #433218;
+  --copyright-text: #8b5e1b;
+  --font-family: "font";
   transition: all 0.2s;
+}
+
+@font-face {
+  font-family: "font";
+  src:
+    local("tilt_neon"),
+    url("../public/tilt_neon/static/TiltNeon-Regular.ttf") format("truetype");
 }
