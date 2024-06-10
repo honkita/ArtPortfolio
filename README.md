@@ -114,7 +114,7 @@ Upon finding the icon, add it to IconsLinks.json. The name(key) does not matter,
 For the "iconName" variable, remove the "fa-" from the second part (fa-instagram becomes instagram). As a result, the entry in the IconsLinks.json file may look like this:
 
 ```
-Instagram: {"prefix": fab, "iconName": Instagram}
+Instagram: {"prefix": fab, "iconName": instagram}
 ```
 
 ## FAQ
